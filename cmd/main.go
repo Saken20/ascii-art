@@ -20,6 +20,12 @@ func main() {
 		case "shadow":
 			bannerPath = "../banners/shadow.txt"
 		}
+		case "thinkertoy":
+            bannerPath = "../banners/thinkertoy.txt"
+        case "standard":
+            bannerPath = "../banners/standard.txt"
+        default:
+            fmt.Println("Unknown banner, using standard.")
 	}
 
 	renderer, err := internal.NewRenderer(bannerPath)
@@ -34,5 +40,4 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Print(output)
-
 }
