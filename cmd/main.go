@@ -15,6 +15,13 @@ func main() {
 	input := os.Args[1]
 	bannerPath := "./banners/standard.txt"
 
+	if len(os.Args) > 2 {
+		switch os.Args[2] {
+		case "shadow":
+			bannerPath = "../banners/shadow.txt"
+		}
+	}
+
 	renderer, err := internal.NewRenderer(bannerPath)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading banner: %v\n", err)
