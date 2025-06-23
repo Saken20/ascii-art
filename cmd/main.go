@@ -19,15 +19,15 @@ func main() {
 		switch os.Args[2] {
 		case "shadow":
 			bannerPath = "../banners/shadow.txt"
-		}
 		case "thinkertoy":
             bannerPath = "../banners/thinkertoy.txt"
         case "standard":
             bannerPath = "../banners/standard.txt"
         default:
             fmt.Println("Unknown banner, using standard.")
+		}
 	}
-
+	
 	renderer, err := internal.NewRenderer(bannerPath)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error loading banner: %v\n", err)
