@@ -81,10 +81,10 @@ $$@@$$$$$$$$``````````@@$$@@$$$$$$
 ### Usage
 
 ```console
-student$ go run . "" | cat -e
-student$ go run . "\n" | cat -e
+student$ go run cmd/main.go "" | cat -e
+student$ go run cmd/main.go "\n" | cat -e
 $
-student$ go run . "Hello\n" | cat -e
+student$ go run cmd/main.go "Hello\n" | cat -e
  _    _          _   _          $
 | |  | |        | | | |         $
 | |__| |   ___  | | | |   ___   $
@@ -94,7 +94,7 @@ student$ go run . "Hello\n" | cat -e
                                 $
                                 $
 $
-student$ go run . "hello" | cat -e
+student$ go run cmd/main.go "hello" | cat -e
  _              _   _          $
 | |            | | | |         $
 | |__     ___  | | | |   ___   $
@@ -103,7 +103,7 @@ student$ go run . "hello" | cat -e
 |_| |_|  \___| |_| |_|  \___/  $
                                $
                                $
-student$ go run . "HeLlO" | cat -e
+student$ go run cmd/main.go "HeLlO" | cat -e
  _    _          _        _    ____   $
 | |  | |        | |      | |  / __ \  $
 | |__| |   ___  | |      | | | |  | | $
@@ -112,7 +112,7 @@ student$ go run . "HeLlO" | cat -e
 |_|  |_|  \___| |______| |_|  \____/  $
                                       $
                                       $
-student$ go run . "Hello There" | cat -e
+student$ go run cmd/main.go "Hello There" | cat -e
  _    _          _   _               _______   _                           $
 | |  | |        | | | |             |__   __| | |                          $
 | |__| |   ___  | | | |   ___          | |    | |__     ___   _ __    ___  $
@@ -121,7 +121,7 @@ student$ go run . "Hello There" | cat -e
 |_|  |_|  \___| |_| |_|  \___/         |_|    |_| |_|  \___| |_|     \___| $
                                                                            $
                                                                            $
-student$ go run . "1Hello 2There" | cat -e
+student$ go run cmd/main.go "1Hello 2There" | cat -e
      _    _          _   _                      _______   _                           $
  _  | |  | |        | | | |              ____  |__   __| | |                          $
 / | | |__| |   ___  | | | |   ___       |___ \    | |    | |__     ___   _ __    ___  $
@@ -130,7 +130,7 @@ student$ go run . "1Hello 2There" | cat -e
 |_| |_|  |_|  \___| |_| |_|  \___/      |_____|   |_|    |_| |_|  \___| |_|     \___| $
                                                                                       $
                                                                                       $
-student$ go run . "{Hello There}" | cat -e
+student$ go run cmd/main.go "{Hello There}" | cat -e
    __  _    _          _   _               _______   _                           __    $
   / / | |  | |        | | | |             |__   __| | |                          \ \   $
  | |  | |__| |   ___  | | | |   ___          | |    | |__     ___   _ __    ___   | |  $
@@ -139,7 +139,7 @@ student$ go run . "{Hello There}" | cat -e
  | |  |_|  |_|  \___| |_| |_|  \___/         |_|    |_| |_|  \___| |_|     \___|  | |  $
   \_\                                                                            /_/   $
                                                                                        $
-student$ go run . "Hello\nThere" | cat -e
+student$ go run cmd/main.go "Hello\nThere" | cat -e
  _    _          _   _          $
 | |  | |        | | | |         $
 | |__| |   ___  | | | |   ___   $
@@ -156,7 +156,7 @@ student$ go run . "Hello\nThere" | cat -e
    |_|    |_| |_|  \___| |_|     \___| $
                                        $
                                        $
-student$ go run . "Hello\n\nThere" | cat -e
+student$ go run cmd/main.go "Hello\n\nThere" | cat -e
  _    _          _   _          $
 | |  | |        | | | |         $
 | |__| |   ___  | | | |   ___   $

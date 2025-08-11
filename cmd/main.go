@@ -15,6 +15,7 @@ func main() {
 	input := os.Args[1]
 	bannerPath := "./banners/standard.txt"
 
+	// Usage: go run . [STRING] [name of banner]
 	if len(os.Args) > 2 {
 		switch os.Args[2] {
 		case "shadow":
