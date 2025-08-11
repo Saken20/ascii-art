@@ -18,11 +18,11 @@ func main() {
 	if len(os.Args) > 2 {
 		switch os.Args[2] {
 		case "shadow":
-			bannerPath = "../banners/shadow.txt"
+			bannerPath = "./banners/shadow.txt"
 		case "thinkertoy":
-            bannerPath = "../banners/thinkertoy.txt"
+            bannerPath = "./banners/thinkertoy.txt"
         case "standard":
-            bannerPath = "../banners/standard.txt"
+            bannerPath = "./banners/standard.txt"
         default:
             fmt.Println("Unknown banner, using standard.")
 		}
